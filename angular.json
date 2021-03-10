@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "yamaren-angular"
+    }
+  },
+  "defaultProject": "yamaren-angular",
+  "cli": {
+    "analytics": false
+  }
 }

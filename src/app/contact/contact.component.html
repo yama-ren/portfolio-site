@@ -1,0 +1,56 @@
+<div class="screen_top">
+  <p class="contents_name contact_name1">C</p>
+  <p class="contents_name contact_name2">ONTACT</p>
+</div>
+<div class="contact_bg1"></div>
+<div class="contact_bg2">
+    <form id="contact_form" [formGroup]="form" novalidate>
+    <div class="contact_left_box">
+        <div>
+          <label><p class="contact_contents_txt1">NAME</p></label>
+          <div class="contact_contents_red_box1"></div>
+          <ng-container *ngIf="name.invalid && (name.touched || name.dirty)">
+          <span *ngIf="name.hasError('required')" class="error_txt1">名前は必須です</span>
+          <span *ngIf="name.hasError('pattern')" class="error_txt2">入力パターンが間違ってます</span>
+          </ng-container>
+          <input id="name" type="text" name="name" placeholder="例）山田太郎" class="contact_contents_txt_box1" formControlName="name" required>
+        </div>
+        <div>
+          <label><p class="contact_contents_txt2">[Furigana]</p></label>
+          <div class="contact_contents_red_box2"></div>
+          <ng-container *ngIf="furigana.invalid && (furigana.touched || furigana.dirty)">
+          <span *ngIf="furigana.hasError('required')" class="error_txt3">ふりがなは必須です</span>
+          <span *ngIf="furigana.hasError('pattern')" class="error_txt4">入力パターンが間違ってます</span>
+        </ng-container>
+          <input id="furigana" type="text" name="furigana" placeholder="例）やまだたろう" class="contact_contents_txt_box2" formControlName="furigana" required>
+        </div>
+        <div>
+          <label><p class="contact_contents_txt3">EMAIL</p></label>
+          <div class="contact_contents_red_box3"></div>
+          <ng-container *ngIf="email.invalid && (email.touched || email.dirty)">
+          <span *ngIf="email.hasError('required')" class="error_txt5">メールアドレスは必須です</span>
+          <span *ngIf="email.hasError('pattern')" class="error_txt6">入力パターンが間違ってます</span>
+        </ng-container>
+          <input id="email" type="email" name="email" placeholder="例）guest@example.com" class="contact_contents_txt_box3" formControlName="email">
+        </div>
+        <div>
+          <label><p class="contact_contents_txt4">TELEPHONE</p></label>
+          <ng-container *ngIf="tel.invalid && (tel.touched || tel.dirty)">
+          <span *ngIf="tel.hasError('pattern')" class="error_txt7">入力パターンが間違ってます</span>
+        </ng-container>
+          <input id="tel" type="tel" name="tel" placeholder="例）0000000000" class="contact_contents_txt_box4" formControlName="tel">
+        </div>
+    </div>
+    <button class="contact_button" type="submit" [disabled]="form.invalid">SUBMIT</button>
+    <div class="contact_right_box">
+      <label><p class="contact_contents_txt5">COMMENT</p></label>
+      <div class="contact_contents_red_box5"></div>
+      <div>
+        <ng-container *ngIf="content.invalid && (content.touched || content.dirty)">
+          <span *ngIf="content.hasError('required')" class="error_txt8">お問い合わせ内容は必須項目です</span>
+        </ng-container>
+        <textarea id="content" name="content" rows="23" cols="66" placeholder="お問合せ内容を入力" class="contact_contents_txt_box5" maxlength="1000" formControlName="content"></textarea>
+      </div>
+    </div>
+</form>
+</div>

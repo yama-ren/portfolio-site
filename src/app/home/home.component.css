@@ -1,0 +1,147 @@
+.charactor {
+  height: 104vh;
+  position: absolute;
+  margin-left: 36%;
+  width: 52%;
+}
+
+.charactor_mb {
+  display: none;
+}
+
+.name {
+  margin-top: 70px;
+  position: absolute;
+  width:90%;
+}
+
+.F_name {
+  color: black;
+  font-size: 18.1vw;
+  display: inline-block;
+  height: 200px;
+  margin-top: 70px;
+  margin-left: -9px;
+}
+
+.L_name {
+  color: black;
+  font-size: 17.6vw;
+  display: inline-block;
+  margin-left: -15px;
+}
+
+.fadein-left {
+  animation: fadein-left 1.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadein-left {
+  from {
+      opacity: 0;
+      transform: translateX(0%);
+  }
+  to {
+      opacity: 1;
+  transform: translateX(3%);
+  }
+}
+
+.fadein-right {
+  animation: fadein-right 1.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadein-right {
+  from {
+      opacity: 0;
+      transform: translateX(5%);
+  }
+  to {
+      opacity: 1;
+  transform: translateX(0);
+  }
+}
+
+/* ==========================================================================
+responsive
+========================================================================== */
+
+@media screen and (max-width: 1280px){
+
+.charactor {
+  width: 56%;
+  margin-left: 33%;
+}
+
+.name {
+  margin-top: 90px;
+}
+
+}
+@media screen and (max-width: 1024px) {
+
+.charactor {
+  width: 62%;
+  margin-left: 29%;
+}
+
+.name {
+  margin-top: 135px;
+}
+
+.F_name {
+  height: 175px;
+}
+
+}
+
+@media screen and (max-width: 896px){
+
+.charactor {
+  width: 65%;
+  margin-left: 26%;
+}
+
+.name {
+  margin-top: 160px;
+}
+
+.F_name {
+  height: 150px;
+}
+
+}
+@media screen and (max-width: 480px) {
+
+.charactor {
+  display: none;
+}
+
+.charactor_mb {
+  width: 550px;
+  height: 550px;
+  margin-top: 30px;
+  margin-left: 50px;
+  display: block;
+  position: absolute;
+
+}
+
+.name {
+  margin-top: 70px;
+  position: absolute;
+  width:90%;
+}
+
+.F_name {
+  height: 0;
+  margin-top: 270px;
+  margin-left: 6px;
+}
+
+.L_name {
+  margin-left: -1px;
+}
+
+}

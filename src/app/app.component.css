@@ -1,0 +1,335 @@
+*{
+  font-family: "Arial", "メイリオ";
+  margin:0;
+  padding:0;
+}
+
+.main_contents {
+  width: 95%;
+  height: 104vh;
+  float: left;
+  /* background-color: rgb(184, 184, 28); */
+}
+
+.logo {
+  width: 20%;
+  position: absolute;
+  top: -7px;
+  left: -10px;
+}
+
+/* ==========================================================================
+animation
+========================================================================== */
+
+.fadein-left {
+  animation: fadein-left 1.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadein-left {
+  from {
+      opacity: 0;
+      transform: translateX(0%);
+  }
+  to {
+      opacity: 1;
+  transform: translateX(3%);
+  }
+}
+
+.fadein-right {
+  animation: fadein-right 1.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadein-right {
+  from {
+      opacity: 0;
+      transform: translateX(5%);
+  }
+  to {
+      opacity: 1;
+  transform: translateX(0);
+  }
+}
+
+/* ==========================================================================
+header
+========================================================================== */
+
+.header_box {
+  width: 74px;
+  height: 104vh;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+.nav_icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10%;
+  margin-left: 10%;
+}
+
+.nav_icon:hover {
+  transform: scale(1.1);
+  transition-duration: 0.1s;
+}
+
+.nav_icon1 {
+  background-image: url('../assets/img/home_icon_white.png');
+  margin-top: 30px;
+}
+
+.nav_icon1:hover {
+  background-image: url('../assets/img/home_icon.png');
+}
+
+.nav_icon2 {
+  background-image: url('../assets/img/works_icon_white.png');
+}
+
+.nav_icon2:hover {
+  background-image: url('../assets/img/works_icon.png');
+}
+
+.nav_icon3 {
+  background-image: url('../assets/img/about_icon_white.png');
+}
+
+.nav_icon3:hover {
+  background-image: url('../assets/img/about_icon.png');
+}
+
+.nav_icon4 {
+  background-image: url('../assets/img/ability_icon_white.png');
+}
+
+.nav_icon4:hover {
+  background-image: url('../assets/img/ability_icon.png');
+}
+
+.nav_icon5 {
+  background-image: url('../assets/img/contact_icon_white.png');
+}
+
+.nav_icon5:hover {
+  background-image: url('../assets/img/contact_icon.png');
+}
+
+.nav_icon6 {
+  background-image: url('../assets/img/sns_icon_white.png');
+}
+
+.nav_icon6:hover {
+  background-image: url('../assets/img/sns_icon.png');
+}
+
+.center {
+  margin: 0 auto;
+}
+
+.nt_text {
+  writing-mode: vertical-rl;
+  color: white;
+  font-size: 3.6vh;
+  font-weight: bold;
+  margin-top: 90%;
+  margin-left: 47px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.nt_text:hover {
+  opacity: 0.9;
+  transition-duration: 0.1s;
+}
+
+.header_box_mb {
+  display: none;
+}
+
+/* ==========================================================================
+footer
+========================================================================== */
+
+.cl {
+  margin: 0;
+  margin-top: 38px;
+  margin-left: 31px;
+  text-align: left;
+  font-size: 18px;
+  width: 100%;
+}
+
+/* ==========================================================================
+responsive
+========================================================================== */
+
+@media screen and (max-width: 1280px) {
+
+.nav_icon {
+  margin-bottom: 5%;
+}
+
+.nt_text {
+  margin-top: 25%;
+  margin-left: 51px;
+}
+
+}
+
+@media screen and (max-width: 1024px) {
+
+.header_box {
+  width: 64px;
+}
+
+.nav_icon {
+  margin-left: 4%;
+  margin-bottom: -10%;
+}
+
+.nav_icon1 {
+  background-image: url('../assets/img/home_icon_white_min.png');
+}
+
+.nav_icon1:hover {
+  background-image: url('../assets/img/home_icon_min.png');
+}
+
+.nav_icon2 {
+  background-image: url('../assets/img/works_icon_white_min.png');
+}
+
+.nav_icon2:hover {
+  background-image: url('../assets/img/works_icon_min.png');
+}
+
+.nav_icon3 {
+  background-image: url('../assets/img/about_icon_white_min.png');
+}
+
+.nav_icon3:hover {
+  background-image: url('../assets/img/about_icon_min.png');
+}
+
+.nav_icon4 {
+  background-image: url('../assets/img/ability_icon_white_min.png');
+}
+
+.nav_icon4:hover {
+  background-image: url('../assets/img/ability_icon_min.png');
+}
+
+.nav_icon5 {
+  background-image: url('../assets/img/contact_icon_white_min.png');
+}
+
+.nav_icon5:hover {
+  background-image: url('../assets/img/contact_icon_min.png');
+}
+
+.nav_icon6 {
+  background-image: url('../assets/img/sns_icon_white_min.png');
+}
+
+.nav_icon6:hover {
+  background-image: url('../assets/img/sns_icon_min.png');
+}
+
+.nt_text {
+  font-size: 2.6vh;
+  margin-top: 89%;
+  margin-left: 46px;
+}
+
+}
+
+@media screen and (max-width: 896px) {
+
+.logo {
+  width: 180px;
+  height: 55px;
+}
+
+.nt_text {
+  margin-top: 57%;
+  margin-left: 46px;
+}
+
+}
+
+@media screen and (max-width: 480px) {
+
+.main_contents {
+  width: 100%;
+  height: 109vh;
+}
+
+.header_box {
+  display: none;
+}
+
+.header_box_mb {
+  display: block;
+  width: 100%;
+  height: 72px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background-color: black;
+}
+
+.nav_icon {
+  margin:5px 2% 0;
+  display: inline-block;
+}
+
+.nav_icon1 {
+  background-image: url('../assets/img/home_icon_white.png');
+}
+
+.nav_icon2 {
+  background-image: url('../assets/img/works_icon_white.png');
+}
+
+.nav_icon3 {
+  background-image: url('../assets/img/about_icon_white.png');
+}
+
+.nav_icon4 {
+  background-image: url('../assets/img/ability_icon_white.png');
+}
+
+.nav_icon5 {
+  background-image: url('../assets/img/contact_icon_white.png');
+}
+
+.nav_icon6 {
+  background-image: url('../assets/img/sns_icon_white.png');
+}
+
+.cl {
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+/* .mb_left_btn {
+  width: 30px;
+  height: 113px;
+  background-color: tomato;
+  display: inline-block;
+}
+
+.mb_right_btn {
+  width: 30px;
+  height: 113px;
+  background-color: tomato;
+  display: inline-block;
+} */
+
+}
