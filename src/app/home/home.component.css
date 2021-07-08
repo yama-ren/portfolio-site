@@ -1,8 +1,13 @@
+.mb_bg {
+  display: none;
+}
+
 .charactor {
-  height: 104vh;
+  width: 54%;
+  /* height: 676px; */
+  /* height: 104vh; */
   position: absolute;
   margin-left: 36%;
-  width: 52%;
 }
 
 .charactor_mb {
@@ -70,24 +75,22 @@ responsive
 @media screen and (max-width: 1280px){
 
 .charactor {
-  width: 56%;
-  margin-left: 33%;
+  margin-left: 36%;
 }
 
 .name {
-  margin-top: 90px;
+  margin-top: 50px;
 }
 
 }
 @media screen and (max-width: 1024px) {
 
 .charactor {
-  width: 62%;
-  margin-left: 29%;
+  margin-left: 35%;
 }
 
 .name {
-  margin-top: 135px;
+  margin-top: 35px;
 }
 
 .F_name {
@@ -98,13 +101,8 @@ responsive
 
 @media screen and (max-width: 896px){
 
-.charactor {
-  width: 65%;
-  margin-left: 26%;
-}
-
 .name {
-  margin-top: 160px;
+  margin-top: 20px;
 }
 
 .F_name {
@@ -119,28 +117,37 @@ responsive
 }
 
 .charactor_mb {
-  width: 550px;
-  height: 550px;
+  width: 390px;
+  height: 390px;
   margin-top: 30px;
-  margin-left: 50px;
+  margin-left: 170px;
   display: block;
   position: absolute;
+  animation: fadein-right 1.5s;
+}
 
+.mb_bg {
+  display: block;
+  width: 479px;
+  height: 154px;
+  margin-top: 260px;
+  background: transparent linear-gradient(180deg, #51FFCB 0%, #00D382 100%) 0% 0% no-repeat padding-box;
 }
 
 .name {
-  margin-top: 70px;
-  position: absolute;
-  width:90%;
+  margin-top: -415px;
+  width:100%;
 }
 
 .F_name {
+  font-size: 65px;
   height: 0;
   margin-top: 270px;
   margin-left: 6px;
 }
 
 .L_name {
+  font-size: 65px;
   margin-left: -1px;
 }
 
