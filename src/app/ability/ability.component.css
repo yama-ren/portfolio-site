@@ -1,5 +1,5 @@
 .contents_name {
-  font-size: 6vw;
+  font-size: 91px;
   font-weight: bold;
   animation: SlideIn_contents 1s;
 }
@@ -7,7 +7,6 @@
 .screen_top {
   width: 100%;
   height: 19.5vh;
-  /* background-color: yellow; */
 }
 
 .contents_txt {
@@ -15,7 +14,6 @@
   width: 30%;
   height: 1%;
   font-size: 3vw;
-  font-weight: bold;
   padding-left: 55%;
   padding-top: 23%;
 }
@@ -24,17 +22,19 @@
   display: inline;
   margin: 0;
   color: #00A968;
-  position: absolute;
-  top: 62px;
+  top: 63px;
   margin-left: 71.3%;
+  position: fixed;
+  right: 368px;
 }
 
 .ability_name2 {
   display: inline;
   margin: 0;
-  position: absolute;
-  top: 62px;
+  top: 63px;
   margin-left: 75.8%;
+  position: fixed;
+  right: 76px;
 }
 
 .abilitty_bg1 {
@@ -43,6 +43,8 @@
   background: transparent linear-gradient(90deg, #D8EE8C 0%, #D5EE8D 0%, #8CEEA2 100%) 0% 0% no-repeat padding-box;
   float: left;
   animation: SlideIn_contents_left 1.5s;
+  position: fixed;
+  top: 147px;
 }
 
 .ability_dumy {
@@ -52,47 +54,62 @@
 }
 
 .abilitty_bg2 {
-  width: 25%;
+  width: 375px;
+  /* width: 25%; */
   height:84.5vh;
   background:#8CEEA2;
   float: left;
   animation: SlideIn_ability 1.5s;
+  position: fixed;
+  top: 147px;
+  right: 800px;
 }
 
 .abilitty_bg3 {
-  width: 25%;
+  width: 375px;
+  /* width: 25%; */
   height:84.5vh;
   background: transparent linear-gradient(91deg, #8CEEA2 0%, #51FFCB 100%) 0% 0% no-repeat padding-box;
   float: left;
   animation: SlideIn_ability 1.25s;
+  position: fixed;
+  top: 147px;
+  right: 430px;
 }
 
 .abilitty_bg4 {
-  width: 25%;
+  width: 375px;
+  /* width: 25%; */
   height:84.5vh;
   background:#51FFCB;
   float: left;
   animation: SlideIn_ability 1s;
+  position: fixed;
+  top: 147px;
+  right: 76px;
 }
 
 .ability_contents_txt1 {
   margin-top: -55px;
   margin-left: -156px;
-  font-size: 77%;
+  font-size: 34px;
+  /* font-size: 77%; */
   position: absolute;
 }
 
 .ability_contents_txt2 {
   margin-top: -55px;
   margin-left: -88px;
-  font-size: 77%;
+  font-size: 34px;
+  /* font-size: 77%; */
   position: absolute;
 }
 
 .ability_contents_txt3 {
   margin-top: -55px;
   margin-left: -88px;
-  font-size: 77%;
+  font-size: 34px;
+  /* font-size: 77%; */
   position: absolute;
 }
 
@@ -104,8 +121,10 @@
 }
 
 .ability_contents_txt_box {
-  width: 250%;
-  height: 5vw;
+  width: 281px;
+  /* width: 250%; */
+  height: 75px;
+  /* height: 5vw; */
   margin-left: -155px;
   background-color: white;
   box-shadow: 0px 3px 10px #33333339;
@@ -115,7 +134,8 @@
 .ability_contents_box_txt {
   width: 80%;
   color: #FF1E9BF0;
-  font-size: 46%;
+  font-size: 19px;
+  /* font-size: 42%; */
   text-align: center;
   margin: auto;
   position: absolute;
@@ -168,5 +188,219 @@
   100% {
       opacity: 1;
       transform: translateX(0);
+  }
+}
+
+@keyframes SlideIn_ability_mb {
+    0% {
+        opacity: 0;
+        transform: translateX(1000px);
+        transform:rotate(-90deg);
+        right: -400px;
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+        transform:rotate(-90deg);
+
+    }
+  }
+
+/* ==========================================================================
+responsive
+========================================================================== */
+
+@media screen and (max-width: 1280px){
+
+  .abilitty_bg2 {
+    width: 350px;
+    right: 750px;
+  }
+
+  .abilitty_bg3 {
+    width: 350px;
+    right: 410px;
+  }
+
+  .abilitty_bg4 {
+    width: 350px;
+  }
+
+}
+@media screen and (max-width: 1024px) {
+
+  .contents_name {
+    font-size: 65px;
+  }
+
+  .ability_name1 {
+    top: 87px;
+    right:273px;
+  }
+
+  .ability_name2 {
+    top: 87px;
+    right: 63px;
+  }
+
+  .abilitty_bg2 {
+    width: 256px;
+    right: 576px;
+  }
+
+  .abilitty_bg3 {
+    width: 256px;
+    right: 320px;
+  }
+
+  .abilitty_bg4 {
+    right: 64px;
+    width: 256px;
+  }
+
+  .ability_contents_txt1 {
+    font-size: 30px;
+    margin-top: -45px;
+    margin-left: -130px;
+  }
+
+  .ability_contents_txt2 {
+    font-size: 30px;
+    margin-top: -45px;
+    margin-left: -70px;
+  }
+
+  .ability_contents_txt3 {
+    font-size: 30px;
+    margin-top: -45px;
+    margin-left: -75px;
+  }
+
+  .ability_contents_txt_box {
+    width: 180px;
+    margin-left: -100px;
+    height: 50px;
+  }
+
+  .ability_contents_box_txt {
+    font-size: 14px;
+  }
+
+}
+
+@media screen and (max-width: 896px){
+
+  .abilitty_bg2 {
+    width: 216px;
+    right: 496px;
+  }
+
+  .abilitty_bg3 {
+    width: 216px;
+    right: 280px;
+  }
+
+  .abilitty_bg4 {
+    width: 216px;
+  }
+
+  .ability_contents_txt1 {
+    font-size: 22px;
+    margin-top: -38px;
+    margin-left: -95px;
+  }
+
+  .ability_contents_txt2 {
+    font-size: 22px;
+    margin-top: -38px;
+    margin-left: -53px;
+  }
+
+  .ability_contents_txt3 {
+    font-size: 22px;
+    margin-top: -38px;
+    margin-left: -55px;
+  }
+
+  .ability_contents_txt_box {
+    width: 180px;
+    margin-left: -100px;
+    height: 50px;
+  }
+
+  .ability_contents_box_txt {
+    font-size: 14px;
+  }
+
+}
+@media screen and (max-width: 480px) {
+
+  .contents_name {
+    font-size: 50px;
+  }
+
+  .ability_name1 {
+    position: absolute;
+    right: 160px;
+  }
+
+  .ability_name2 {
+    position: absolute;
+    right: 0px;
+  }
+
+  .abilitty_bg2 {
+    transform:rotate(-90deg);
+    animation: SlideIn_ability_mb 2s;
+    position: absolute;
+    width: 120px;
+    height: 65vh;
+    top: 298px;
+    right: 76px;
+  }
+
+  .abilitty_bg3 {
+    transform:rotate(-90deg);
+    animation: SlideIn_ability_mb 1.5s;
+    position: absolute;
+    width: 120px;
+    height: 65vh;
+    top: 179px;
+    right: 76px;
+  }
+
+  .abilitty_bg4 {
+    transform:rotate(-90deg);
+    animation: SlideIn_ability_mb 1s;
+    position: absolute;
+    width: 120px;
+    height: 65vh;
+    top: 60px;
+    right: 76px;
+  }
+
+  .ability_contents_txt_box {
+    transform:rotate(90deg);
+    margin-top: 65px;
+
+  }
+
+  .ability_contents_txt1 {
+    transform:rotate(90deg);
+    margin-top: 60px;
+    margin-left: -50px;
+  }
+
+  .ability_contents_txt2 {
+    transform:rotate(90deg);
+    margin-top: 15px;
+    margin-left: -5px;
+  }
+
+  .ability_contents_txt3 {
+    transform:rotate(90deg);
+    margin-top: 15px;
+    margin-left: -10px;
+
   }
 }
